@@ -1,7 +1,7 @@
 import styles from "../../styles/banner.module.css";
 
 // Assets Import
-import title from "../../assets/title.png";
+import title from "../../assets/mainlogo.png";
 import cherry from "../../assets/cherry.png";
 
 export default function ContentOverlay() {
