@@ -389,11 +389,11 @@
     font-size: clamp(0.6rem, 2vw, 1.5rem);
   }
   .banner {
-    height: 98vh;
+    height: 91vh;
   }
 
   .canvas {
-    height: 98vh;
+    height: 91vh;
   }
 
   .limitedMerch {
