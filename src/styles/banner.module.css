@@ -84,7 +84,7 @@
 .layerGlossyWheel {
   --size: 317px;
   z-index: 2;
-  bottom: -30%;
+  bottom: -34%;
   left: 30%;
 }
 
@@ -389,7 +389,7 @@
     font-size: clamp(0.6rem, 2vw, 1.5rem);
   }
   .banner {
-    height: 91vh;
+    height: 92vh;
   }
 
   .canvas {
