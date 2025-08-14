@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    all: unset;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --color-background: #000;
+    --color-button: #0d00ff;
+    --color-pink: #ff7fcb;
+}
