@@ -1,427 +1,427 @@
 .banner {
-    width: 100%;
-    min-width: 320px;
-    height: 100vh;
-    background: var(--color-background);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  width: 100%;
+  min-width: 320px;
+  height: 100vh;
+  background: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .canvas {
-    position: relative;
-    width: min(1440px, 100%);
-    height: 100%;
-    overflow: hidden;
+  position: relative;
+  width: min(2440px, 100%);
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* ================================================================================================= */
 /*                                          Layer Styles                                             */
 /* ================================================================================================= */
 .layer {
-    position: absolute;
-    pointer-events: none;
-    user-select: none;
-    transform: translate(-50%, -50%);
-    will-change: transform, opacity;
-    width: var(--size, 12vw);
-    height: auto;
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  transform: translate(-50%, -50%);
+  will-change: transform, opacity;
+  width: var(--size, 12vw);
+  height: auto;
 }
 
 .layerCherry {
-    --size: clamp(48px, 6vw, 72px);
-    z-index: 1;
-    left: 102%;
-    top: 57%;
+  --size: clamp(48px, 6vw, 72px);
+  z-index: 1;
+  left: 102%;
+  top: 57%;
 }
 
 .layerRecorder {
-    --size: clamp(144px, 20vw, 286px);
-    top: 5%;
-    left: 9%;
+  --size: clamp(144px, 20vw, 286px);
+  top: 5%;
+  left: 9%;
 }
 
 .layerPinkDots {
-    --size: clamp(364px, 60vw, 930px);
-    height: 100%;
-    z-index: 1;
-    left: 85%;
-    top: 32%;
+  --size: clamp(364px, 60vw, 930px);
+  height: 100%;
+  z-index: 1;
+  left: 85%;
+  top: 32%;
 }
 
 .layerComma {
-    --size: clamp(29px, 3vw, 53px);
-    z-index: 1;
-    right: 0%;
-    bottom: 26%;
+  --size: clamp(29px, 3vw, 53px);
+  z-index: 1;
+  right: 0%;
+  bottom: 26%;
 }
 
 .layerGreenBubbles {
-    --size: clamp(235px, 35vw, 448px);
-    z-index: 1;
-    left: 95%;
-    top: 14%;
+  --size: clamp(235px, 35vw, 448px);
+  z-index: 1;
+  left: 95%;
+  top: 14%;
 }
 
 .layerConversationBubble {
-    --size: clamp(144px, 20vw, 286px);
-    z-index: 2;
-    top: 23%;
-    left: 93%;
+  --size: clamp(144px, 20vw, 286px);
+  z-index: 2;
+  top: 23%;
+  left: 93%;
 }
 
 .layerConversationBubbleInner {
-    display: block;
-    width: 100%;
-    height: auto;
-    transform: translateY(0);
-    will-change: transform;
-    animation: floatY 5s ease-in-out infinite;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translateY(0);
+  will-change: transform;
+  animation: floatY 5s ease-in-out infinite;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .layerGlossyWheel {
-    --size: 317px;
-    z-index: 2;
-    bottom: -38%;
-    left: 30%;
+  --size: 317px;
+  z-index: 2;
+  bottom: -38%;
+  left: 30%;
 }
 
 .layerGlossyWheelInner {
-    display: block;
-    width: 100%;
-    height: auto;
-    transform: translateY(0);
-    will-change: transform;
-    animation: rotateSmoothClockwise 10s linear infinite;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translateY(0);
+  will-change: transform;
+  animation: rotateSmoothClockwise 10s linear infinite;
 }
 
 .layerPinkStar {
-    --size: 625px;
-    z-index: 3 !important;
-    left: 5%;
-    top: 40%;
+  --size: 625px;
+  z-index: 3 !important;
+  left: 5%;
+  top: 40%;
 }
 
 .layerPinkStarInner {
-    display: block;
-    width: 100%;
-    height: auto;
-    transform: translateY(0);
-    will-change: transform;
-    animation: rotateClockwise 6s ease-in-out infinite;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translateY(0);
+  will-change: transform;
+  animation: rotateClockwise 6s ease-in-out infinite;
 }
 
 .layerYellowDots {
-    --size: clamp(400px, 60vw, 700px);
-    z-index: 1 !important;
-    left: 12%;
-    top: 72%;
+  --size: clamp(400px, 60vw, 700px);
+  z-index: 1 !important;
+  left: 12%;
+  top: 60%;
 }
 
 .layerSquigglyLine {
-    --size: clamp(132px, 10vw, 237px);
-    z-index: 2 !important;
-    left: 12%;
-    top: 60%;
+  --size: clamp(132px, 10vw, 237px);
+  z-index: 2 !important;
+  left: 12%;
+  top: 60%;
 }
 
 .layerSprayCan {
-    --size: clamp(164px, 16vw, 437px);
-    right: -7%;
-    top: 75%;
+  --size: clamp(164px, 16vw, 437px);
+  right: -7%;
+  top: 75%;
 }
 
 .layerOlives {
-    --size: clamp(100px, 10vw, 200px);
-    left: 10%;
-    top: 80%;
-    transform: translate(-50%, -50%);
+  --size: clamp(100px, 10vw, 200px);
+  left: 10%;
+  top: 80%;
+  transform: translate(-50%, -50%);
 }
 
 /* ================================================================================================= */
 /*                                          Animations                                               */
 /* ================================================================================================= */
 @keyframes floatY {
-    0% {
-        transform: translateY(-10%);
-    }
-    50% {
-        transform: translateY(8%);
-    }
-    100% {
-        transform: translateY(-10%);
-    }
+  0% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(8%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
 }
 
 @keyframes rotateSmoothClockwise {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes rotateClockwise {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .layerConversationBubbleInner,
-    .layerGlossyWheelInner,
-    .layerPinkStarInner {
-        animation: none !important;
-        transition: none !important;
-    }
+  .layerConversationBubbleInner,
+  .layerGlossyWheelInner,
+  .layerPinkStarInner {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
 /* ================================================================================================= */
 /*                                          Content Overlay                                          */
 /* ================================================================================================= */
 .centerContent {
-    position: absolute;
-    left: 50%;
-    top: 35%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    pointer-events: auto;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  pointer-events: auto;
 }
 
 .title {
-    width: 100%;
-    height: auto;
-    max-width: 643px;
-    max-height: 243px;
+  width: 100%;
+  height: auto;
+  max-width: 643px;
+  max-height: 243px;
 }
 
 .metaContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-    gap: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 0.5rem;
 }
 
 .meta {
-    font-family: Helvetica, sans-serif, Arial;
-    font-size: clamp(1rem, 2vw, 2rem);
-    opacity: 0.95;
+  font-family: Helvetica, sans-serif, Arial;
+  font-size: clamp(1rem, 2vw, 2rem);
+  opacity: 0.95;
 }
 
 /* ================================================================================================= */
 /*                                              CTA                                                  */
 /* ================================================================================================= */
 .cta {
-    position: absolute;
-    bottom: 10rem;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  bottom: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .button {
-    display: inline-block;
-    background: var(--color-button);
-    padding: 18px 32px;
-    border-radius: 250px;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: clamp(1rem, 2vw, 2rem);
-    font-family: Helvetica, sans-serif, Arial;
-    min-width: 200px;
-    text-align: center;
+  display: inline-block;
+  background: var(--color-button);
+  padding: 18px 32px;
+  border-radius: 250px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-family: Helvetica, sans-serif, Arial;
+  min-width: 200px;
+  text-align: center;
 }
 
 .limitedMerchContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
 
 .dot {
-    width: 9px;
-    height: 9px;
-    background: var(--color-pink);
-    border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  background: var(--color-pink);
+  border-radius: 50%;
 }
 
 .limitedMerch {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Helvetica, sans-serif, Arial;
-    color: var(--color-pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Helvetica, sans-serif, Arial;
+  color: var(--color-pink);
 }
 
 /* ================================================================================================= */
 /*                                          Social Media Links                                       */
 /* ================================================================================================= */
 .socialLinks {
-    position: absolute;
-    bottom: 1rem;
-    right: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .withoutWarning {
-    position: absolute;
-    bottom: 1rem;
-    left: 2rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
 }
 
 /* ================================================================================================= */
 /*                                          Responsive Styles                                        */
 /* ================================================================================================= */
 @media (max-width: 900px) {
-    .centerContent {
-        top: 30%;
-    }
+  .centerContent {
+    top: 30%;
+  }
 
-    .metaContainer {
-        flex-direction: column;
-        justify-content: center;
-    }
+  .metaContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .dot {
-        width: 8px;
-        height: 8px;
-    }
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
 
-    .limitedMerch {
-        font-size: clamp(0.8rem, 2vw, 1.2rem);
-    }
+  .limitedMerch {
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+  }
 
-    .layerCherry {
-        --size: clamp(36px, 8vw, 56px);
-        left: 102%;
-        top: 30%;
-    }
+  .layerCherry {
+    --size: clamp(36px, 8vw, 56px);
+    left: 102%;
+    top: 30%;
+  }
 
-    .layerRecorder {
-        top: 3%;
-    }
+  .layerRecorder {
+    top: 3%;
+  }
 
-    .layerPinkDots {
-        --size: clamp(300px, 50vw, 600px);
-        height: auto;
-        left: 75%;
-        top: 15%;
-    }
+  .layerPinkDots {
+    --size: clamp(300px, 50vw, 600px);
+    height: auto;
+    left: 75%;
+    top: 15%;
+  }
 
-    .layerComma {
-        --size: clamp(42px, 3vw, 150px);
-        bottom: 50%;
-    }
+  .layerComma {
+    --size: clamp(42px, 3vw, 150px);
+    bottom: 50%;
+  }
 
-    .layerGreenBubbles {
-        --size: clamp(200px, 30vw, 400px);
-        left: 90%;
-        top: 10%;
-    }
+  .layerGreenBubbles {
+    --size: clamp(200px, 30vw, 400px);
+    left: 90%;
+    top: 10%;
+  }
 
-    .layerConversationBubble {
-        --size: clamp(144px, 20vw, 286px);
-        z-index: 2;
-        top: 15%;
-        left: 90%;
-    }
+  .layerConversationBubble {
+    --size: clamp(144px, 20vw, 286px);
+    z-index: 2;
+    top: 15%;
+    left: 90%;
+  }
 
-    .layerGlossyWheel {
-        --size: 170px;
-        z-index: 2;
-        bottom: -3%;
-        left: -4%;
-    }
+  .layerGlossyWheel {
+    --size: 170px;
+    z-index: 2;
+    bottom: -3%;
+    left: -4%;
+  }
 
-    .layerPinkStar {
-        --size: 309px;
-        top: 45%;
-        left: 2%;
-    }
+  .layerPinkStar {
+    --size: 309px;
+    top: 45%;
+    left: 2%;
+  }
 
-    .layerYellowDots {
-        --size: clamp(200px, 18vw, 280px);
-        left: 10%;
-        top: 50%;
-    }
+  .layerYellowDots {
+    --size: clamp(200px, 18vw, 280px);
+    left: 10%;
+    top: 50%;
+  }
 
-    .layerSquigglyLine {
-        --size: clamp(100px, 12vw, 180px);
-        top: 50%;
-    }
+  .layerSquigglyLine {
+    --size: clamp(100px, 12vw, 180px);
+    top: 50%;
+  }
 
-    .layerSprayCan {
-        --size: clamp(100px, 6vw, 150px);
-        right: -2%;
-        top: 64%;
-    }
+  .layerSprayCan {
+    --size: clamp(100px, 6vw, 150px);
+    right: -2%;
+    top: 64%;
+  }
 
-    .layerOlives {
-        --size: clamp(100px, 10vw, 200px);
-        left: 10%;
-        top: 70%;
-    }
+  .layerOlives {
+    --size: clamp(100px, 10vw, 200px);
+    left: 10%;
+    top: 70%;
+  }
 }
 
 @media (max-width: 480px) {
-    .button {
-        min-width: 150px;
-        padding: 12px 20px;
-        font-size: clamp(0.6rem, 2vw, 1.5rem);
-    }
+  .button {
+    min-width: 150px;
+    padding: 12px 20px;
+    font-size: clamp(0.6rem, 2vw, 1.5rem);
+  }
 
-    .limitedMerch {
-        font-size: clamp(0.6rem, 2vw, 1.5rem);
-    }
+  .limitedMerch {
+    font-size: clamp(0.6rem, 2vw, 1.5rem);
+  }
 
-    .layerCherry {
-        --size: clamp(32px, 8vw, 48px);
-        left: 103%;
-        top: 20%;
-    }
+  .layerCherry {
+    --size: clamp(32px, 8vw, 48px);
+    left: 103%;
+    top: 20%;
+  }
 
-    .layerRecorder {
-        top: 5%;
-    }
+  .layerRecorder {
+    top: 5%;
+  }
 
-    .layerPinkDots {
-        --size: clamp(300px, 50vw, 600px);
-        left: 60%;
-        top: 15%;
-        height: auto;
-    }
+  .layerPinkDots {
+    --size: clamp(300px, 50vw, 600px);
+    left: 60%;
+    top: 15%;
+    height: auto;
+  }
 
-    .layerGlossyWheel {
-        left: -10%;
-    }
+  .layerGlossyWheel {
+    left: -10%;
+  }
 
-    .layerPinkStar {
-        --size: 207px;
-        top: 40%;
-        left: 0%;
-    }
+  .layerPinkStar {
+    --size: 207px;
+    top: 40%;
+    left: 0%;
+  }
 
-    .layerSquigglyLine {
-        --size: clamp(80px, 6vw, 140px);
-    }
+  .layerSquigglyLine {
+    --size: clamp(80px, 6vw, 140px);
+  }
 
-    .layerOlives {
-        --size: clamp(80px, 6vw, 140px);
-        left: 10%;
-        top: 64%;
-    }
+  .layerOlives {
+    --size: clamp(80px, 6vw, 140px);
+    left: 10%;
+    top: 64%;
+  }
 }
