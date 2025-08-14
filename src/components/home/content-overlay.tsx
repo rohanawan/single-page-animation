@@ -16,7 +16,7 @@ export default function ContentOverlay() {
             />
 
             <div className={styles.metaContainer}>
-                <p className={styles.meta}>12.06.2025</p>
+                <p className={styles.meta}>12.09.2025 8:00 PM</p>
                 <p className={styles.meta}>Platzl 5 — Munich</p>
             </div>
 
