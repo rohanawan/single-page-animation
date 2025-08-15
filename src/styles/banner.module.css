@@ -1,7 +1,8 @@
 .banner {
   width: 100%;
   min-width: 320px;
-  height: 100vh;
+  height: 100svh;
+  min-height: calc(var(--vh, 1vh) * 100);
   background: var(--color-background);
   display: flex;
   justify-content: center;
@@ -12,7 +13,7 @@
 .canvas {
   position: relative;
   width: min(2440px, 100%);
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -84,7 +85,7 @@
 .layerGlossyWheel {
   --size: 317px;
   z-index: 2;
-  bottom: -39%;
+  bottom: -38%;
   left: 30%;
 }
 
@@ -206,7 +207,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
   gap: 0.5rem;
 }
 
@@ -224,6 +225,10 @@
   bottom: 10rem;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
@@ -239,7 +244,6 @@
   font-family: Helvetica, sans-serif, Arial;
   min-width: 200px;
   text-align: center;
-
   &:hover {
     background-color: var(--color-pink) !important;
   }
@@ -290,6 +294,12 @@
 /* ================================================================================================= */
 /*                                          Responsive Styles                                        */
 /* ================================================================================================= */
+@media (min-width: 1500px) {
+  .layerGlossyWheel {
+    bottom: -30% !important;
+  }
+}
+
 @media (max-width: 900px) {
   .centerContent {
     top: 30%;
@@ -382,21 +392,31 @@
 }
 
 @media (max-width: 480px) {
-  .button {
-    min-width: 150px;
-    padding: 12px 20px;
-    font-size: clamp(0.6rem, 2vw, 1.5rem);
-  }
-  .banner {
-    height: 92vh;
+  .title {
+    width: 35vmax;
   }
 
-  .canvas {
-    height: 91vh;
+  .meta {
+    font-size: clamp(1.5rem, 2vw, 1.5rem);
+  }
+
+  .button {
+    min-width: 260px;
+    padding: 18px 0px;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
   }
 
   .limitedMerch {
-    font-size: clamp(0.6rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .layerConversationBubble {
+    top: 12%;
+  }
+
+  .layerComma {
+    --size: 30px;
+    bottom: 48%;
   }
 
   .layerCherry {
@@ -416,6 +436,12 @@
     height: auto;
   }
 
+  .layerYellowDots {
+    --size: clamp(350px, 24vw, 480px);
+    left: 20%;
+    top: 50%;
+  }
+
   .layerGlossyWheel {
     left: -10%;
   }
@@ -430,9 +456,40 @@
     --size: clamp(80px, 6vw, 140px);
   }
 
+  .layerSprayCan {
+    --size: clamp(120px, 8vw, 180px);
+    top: 60%;
+    left: 80%;
+  }
+
   .layerOlives {
     --size: clamp(80px, 6vw, 140px);
     left: 10%;
     top: 64%;
+  }
+}
+
+@media (max-width: 380px) {
+  .button {
+    min-width: 150px;
+    padding: 16px 24px;
+    font-size: clamp(0.9rem, 2vw, 1.5rem);
+  }
+
+  .meta {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+  }
+
+  .limitedMerch {
+    font-size: clamp(0.65rem, 2vw, 1.5rem);
+  }
+
+  .layerConversationBubble {
+    top: 12%;
+    --size: clamp(100px, 14vw, 220px);
+  }
+
+  .layerOlives {
+    display: none;
   }
 }
